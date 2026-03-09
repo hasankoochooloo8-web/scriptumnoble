@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeless Hand-Lettered Artistry at Scriptum Noble</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for styles and glassmorphism based on design system */
+    :root {
+      --bs-primary: #d4af37;
+      --bs-secondary: #222222;
+      --bs-accent: #91ea14;
+      --bs-background-base: #f9f8f6;
+      --bs-surface-glass: rgba(255, 255, 255, 0.6);
+      --bs-font-serif: 'PT Serif', serif;
+      --bs-font-sans-serif: 'Roboto', sans-serif;
+      --bs-border-radius: 4px;
+    }
+
+    body {
+      font-family: var(--bs-font-sans-serif);
+      background-color: var(--bs-background-base);
+      color: var(--bs-secondary);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--bs-font-serif);
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      --bs-btn-bg: var(--bs-primary);
+      --bs-btn-border-color: var(--bs-primary);
+      --bs-btn-hover-bg: #8c7324; /* primaryDark */
+      --bs-btn-hover-border-color: #8c7324;
+      --bs-btn-active-bg: #8c7324;
+      --bs-btn-active-border-color: #8c7324;
+      --bs-btn-color: #ffffff;
+    }
+
+    .btn-dark {
+      --bs-btn-bg: var(--bs-secondary);
+      --bs-btn-border-color: var(--bs-secondary);
+      --bs-btn-hover-bg: #000000;
+      --bs-btn-hover-border-color: #000000;
+      --bs-btn-active-bg: #000000;
+      --bs-btn-active-border-color: #000000;
+      --bs-btn-color: #ffffff;
+    }
+
+    .btn-outline-dark {
+      --bs-btn-color: var(--bs-secondary);
+      --bs-btn-border-color: var(--bs-secondary);
+      --bs-btn-hover-color: #ffffff;
+      --bs-btn-hover-bg: var(--bs-secondary);
+      --bs-btn-hover-border-color: var(--bs-secondary);
+      --bs-btn-active-color: #ffffff;
+      --bs-btn-active-bg: var(--bs-secondary);
+      --bs-btn-active-border-color: var(--bs-secondary);
+    }
+    
+    .rounded-1 {
+        border-radius: var(--bs-border-radius) !important;
+    }
+
+    .pattern-gradient-radial {
+      background: radial-gradient(circle at top left, #f9f8f6, #e0e0d8); /* backgroundBase with a slight variation */
+    }
+
+    .backdrop-blur-sm {
+      backdrop-filter: blur(5px);
+       -webkit-backdrop-filter: blur(5px);
+    }
+
+    .backdrop-blur-md {
+      backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+    }
+
+    .shadow-grow {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .shadow-grow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+    }
+
+    .transition-all {
+        transition: all 0.3s ease;
+    }
+
+    /* Icon styling - inline SVG */
+    .icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
+
+    /* Override Bootstrap bg-opacity and text-bg-dark for contrast */
+    .bg-light.bg-opacity-50 {
+      background-color: rgba(248, 249, 250, 0.7) !important; /* Slightly more opaque for better contrast */
+    }
+    .text-bg-dark {
+      background-color: var(--bs-secondary) !important;
+      color: #ffffff !important;
+    }
+    .text-bg-dark .text-muted {
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    /* Custom styles for image hover effect in services */
+    .service-card-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--bs-border-radius);
+    }
+    .service-card-image-wrapper img {
+        transition: transform 0.5s ease-in-out;
+    }
+    .service-card-image-wrapper:hover img {
+        transform: scale(1.05);
+    }
+    
+    /* Ensure content contrast on cards with glassmorphism */
+    .bg-white.bg-opacity-75 {
+        background-color: rgba(255, 255, 255, 0.85) !important; /* Adjust for readability */
+    }
+    .bg-white.bg-opacity-50 {
+        background-color: rgba(255, 255, 255, 0.70) !important; /* Adjust for readability */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="site-nav" class="navbar navbar-expand-lg d-flex align-items-center justify-content-between p-3 bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-dark" href="#">Scriptum Noble</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#workshops">Workshops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-dark fw-bold rounded-1 d-flex align-items-center gap-2 shadow-sm ms-lg-3">Inquire Now
+            <svg class="icon" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+<main>
+<style>
+  #privacy-policy-section {
+    padding-top: 7rem;
+  }
+</style>
+<section id="privacy-policy-section">
+    <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem;">Privacy Policy for Scriptum Noble</h2>
+
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        At Scriptum Noble, located at 507 Linden Boulevard, New York, New York, 11203, USA, we are dedicated to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and protect the information gathered through our site, which showcases our calligraphy artistry and services, facilitates custom orders, and promotes workshops.
+    </p>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Information We Collect</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        We collect various types of information to provide and improve our calligraphy services:
+    </p>
+    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Personal Identification Information:</strong> This includes your name, email address, postal address, phone number, and payment details when you make a purchase, place a custom order, or register for a workshop.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Order Details:</strong> Information related to your custom calligraphy requests, design preferences, specific text for invitations, or hand-lettered art.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Communication Data:</strong> Records of your correspondence with us, such as inquiries about our services or feedback.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Technical Data:</strong> Information about your device and how you interact with our site, including IP address, browser type, operating system, referral sources, and pages viewed. This is collected through cookies and similar technologies.
+        </li>
+    </ul>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">How We Use Your Information</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        We use the collected information for the following purposes:
+    </p>
+    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">To Provide Services:</strong> Fulfilling bespoke calligraphy orders, creating custom invitations, producing hand-lettered art, processing engraving requests, and managing workshop registrations.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Process Transactions:</strong> Managing payments and delivering purchased products or services.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Communicate with You:</strong> Responding to your inquiries, providing customer support, and sending updates regarding your orders or workshop details.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Improve Our Site and Services:</strong> Analyzing site usage to enhance user experience, refine our service offerings, and develop new calligraphy art and workshop concepts.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Marketing and Promotional Purposes:</strong> With your consent, we may send you newsletters, special offers, or information about new products and workshops related to Scriptum Noble's services.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Legal Compliance:</strong> Adhering to applicable laws, regulations, and legal processes.
+        </li>
+    </ul>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Sharing Your Information</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        We do not sell, trade, or otherwise transfer your personal identification information to outside parties without your consent, except in the following limited circumstances:
+    </p>
+    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Service Providers:</strong> We may share information with trusted third-party service providers who assist us in operating our site, conducting our business, or serving our users (e.g., payment processors, shipping companies). These parties are bound by confidentiality agreements and are permitted to use information only for the specific purposes for which we provide it to them.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Legal Requirements:</strong> We may disclose your information when required to do so by law, in response to a court order, or when we believe in good faith that disclosure is necessary to protect our rights, prevent fraud, protect your safety or the safety of others, or investigate fraud.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Business Transfers:</strong> In the event of a merger, acquisition, or sale of all or a portion of our assets, your personal information may be transferred to the acquiring entity.
+        </li>
+    </ul>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Data Security</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information. These measures include using secure servers, encryption technologies, and access controls to protect against unauthorized access, alteration, disclosure, or destruction of your personal data.
+    </p>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Your Data Protection Rights (GDPR Compliant for EU Residents)</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        If you are a resident of the European Union, you have certain data protection rights under the General Data Protection Regulation (GDPR). We aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data. Your rights include:
+    </p>
+    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">The Right to Access:</strong> You have the right to request copies of your personal data.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">The Right to Rectification:</strong> You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">The Right to Erasure:</strong> You have the right to request that we erase your personal data, under certain conditions.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">The Right to Restrict Processing:</strong> You have the right to request that we restrict the processing of your personal data, under certain conditions.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">The Right to Object to Processing:</strong> You have the right to object to our processing of your personal data, under certain conditions.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">The Right to Data Portability:</strong> You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
+        </li>
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">The Right to Withdraw Consent:</strong> You also have the right to withdraw your consent at any time where Scriptum Noble relied on your consent to process your personal information.
+        </li>
+    </ul>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        To exercise any of these rights, please contact us using the contact details provided below.
+    </p>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Cookies</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        Our site uses "cookies" to enhance user experience. Cookies are small files placed on your hard drive for record-keeping purposes and to track information about your interaction with our site. You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent. If you disable or refuse cookies, please note that some parts of this service may become inaccessible or not function properly.
+    </p>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Third-Party Links</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        Occasionally, at our discretion, we may include or offer third-party products or services on our site. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
+    </p>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Children's Privacy</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        Our service is not intended for individuals under the age of 16. We do not knowingly collect personally identifiable information from anyone under the age of 16. If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.
+    </p>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Changes to This Privacy Policy</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+    </p>
+
+    <h3 style="font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem;">Contact Us</h3>
+    <p style="font-size: 1rem; margin-bottom: 1rem;">
+        If you have any questions about this Privacy Policy, your personal data, or our privacy practices, please contact us:
+    </p>
+    <ul style="list-style: none; padding-left: 0; margin-bottom: 1rem;">
+        <li style="font-size: 1rem; margin-bottom: 0.5rem;">
+            <strong style="font-weight: 600;">Address:</strong> 507 Linden Boulevard, New York, New York, 11203, USA
+        </li>
+    </ul>
+</section>
+</main>
+<footer class="footer text-bg-dark py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center pt-4">
+      <p class="mb-2 mb-md-0 text-white">&copy; 2024 Scriptum Noble. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="./privacy.html" class="text-white text-decoration-none small">Privacy Policy</a>
+        <a href="./tos.html" class="text-white text-decoration-none small">Terms of Service</a>
+      </div>
+    </div>
+    <div id="cookieConsent" class="cookie-consent-banner w-100 py-3 text-center text-white bg-secondary fixed-bottom d-none">
+      <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+        <span>We use cookies to ensure you get the best experience on our website.</span>
+        <button id="acceptCookies" class="btn btn-primary btn-sm rounded-1 px-3">Accept</button>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cookieConsentBanner = document.getElementById('cookieConsent');
+      const acceptCookiesButton = document.getElementById('acceptCookies');
+      const cookieName = 'consent_Scriptum Noble_cookies_accepted';
+
+      // Check if the user has already accepted cookies
+      if (!localStorage.getItem(cookieName)) {
+        cookieConsentBanner.classList.remove('d-none');
+      }
+
+      // Handle "Accept" button click
+      acceptCookiesButton.addEventListener('click', function() {
+        localStorage.setItem(cookieName, 'true');
+        cookieConsentBanner.classList.add('d-none');
+      });
+
+      // Simple smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    });
+  </script>
+</body>
+</html>

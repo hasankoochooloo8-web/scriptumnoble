@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeless Hand-Lettered Artistry at Scriptum Noble</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for styles and glassmorphism based on design system */
+    :root {
+      --bs-primary: #d4af37;
+      --bs-secondary: #222222;
+      --bs-accent: #91ea14;
+      --bs-background-base: #f9f8f6;
+      --bs-surface-glass: rgba(255, 255, 255, 0.6);
+      --bs-font-serif: 'PT Serif', serif;
+      --bs-font-sans-serif: 'Roboto', sans-serif;
+      --bs-border-radius: 4px;
+    }
+
+    body {
+      font-family: var(--bs-font-sans-serif);
+      background-color: var(--bs-background-base);
+      color: var(--bs-secondary);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--bs-font-serif);
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      --bs-btn-bg: var(--bs-primary);
+      --bs-btn-border-color: var(--bs-primary);
+      --bs-btn-hover-bg: #8c7324; /* primaryDark */
+      --bs-btn-hover-border-color: #8c7324;
+      --bs-btn-active-bg: #8c7324;
+      --bs-btn-active-border-color: #8c7324;
+      --bs-btn-color: #ffffff;
+    }
+
+    .btn-dark {
+      --bs-btn-bg: var(--bs-secondary);
+      --bs-btn-border-color: var(--bs-secondary);
+      --bs-btn-hover-bg: #000000;
+      --bs-btn-hover-border-color: #000000;
+      --bs-btn-active-bg: #000000;
+      --bs-btn-active-border-color: #000000;
+      --bs-btn-color: #ffffff;
+    }
+
+    .btn-outline-dark {
+      --bs-btn-color: var(--bs-secondary);
+      --bs-btn-border-color: var(--bs-secondary);
+      --bs-btn-hover-color: #ffffff;
+      --bs-btn-hover-bg: var(--bs-secondary);
+      --bs-btn-hover-border-color: var(--bs-secondary);
+      --bs-btn-active-color: #ffffff;
+      --bs-btn-active-bg: var(--bs-secondary);
+      --bs-btn-active-border-color: var(--bs-secondary);
+    }
+    
+    .rounded-1 {
+        border-radius: var(--bs-border-radius) !important;
+    }
+
+    .pattern-gradient-radial {
+      background: radial-gradient(circle at top left, #f9f8f6, #e0e0d8); /* backgroundBase with a slight variation */
+    }
+
+    .backdrop-blur-sm {
+      backdrop-filter: blur(5px);
+       -webkit-backdrop-filter: blur(5px);
+    }
+
+    .backdrop-blur-md {
+      backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+    }
+
+    .shadow-grow {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .shadow-grow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+    }
+
+    .transition-all {
+        transition: all 0.3s ease;
+    }
+
+    /* Icon styling - inline SVG */
+    .icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
+
+    /* Override Bootstrap bg-opacity and text-bg-dark for contrast */
+    .bg-light.bg-opacity-50 {
+      background-color: rgba(248, 249, 250, 0.7) !important; /* Slightly more opaque for better contrast */
+    }
+    .text-bg-dark {
+      background-color: var(--bs-secondary) !important;
+      color: #ffffff !important;
+    }
+    .text-bg-dark .text-muted {
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    /* Custom styles for image hover effect in services */
+    .service-card-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--bs-border-radius);
+    }
+    .service-card-image-wrapper img {
+        transition: transform 0.5s ease-in-out;
+    }
+    .service-card-image-wrapper:hover img {
+        transform: scale(1.05);
+    }
+    
+    /* Ensure content contrast on cards with glassmorphism */
+    .bg-white.bg-opacity-75 {
+        background-color: rgba(255, 255, 255, 0.85) !important; /* Adjust for readability */
+    }
+    .bg-white.bg-opacity-50 {
+        background-color: rgba(255, 255, 255, 0.70) !important; /* Adjust for readability */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="site-nav" class="navbar navbar-expand-lg d-flex align-items-center justify-content-between p-3 bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-dark" href="#">Scriptum Noble</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#workshops">Workshops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-dark fw-bold rounded-1 d-flex align-items-center gap-2 shadow-sm ms-lg-3">Inquire Now
+            <svg class="icon" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+<main>
+<style>
+  #scriptumnoble-terms {
+    padding-top: 7rem;
+  }
+</style>
+<section id="scriptumnoble-terms">
+    <h2 style="font-size: 2.25rem; font-weight: 700; margin: 0 0 1.5rem 0;">Terms and Conditions for Scriptum Noble</h2>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">Welcome to Scriptum Noble. These Terms and Conditions govern your use of our online platform and the calligraphy services we provide. By accessing or using our service, you agree to comply with and be bound by these terms. If you do not agree to these terms, please do not use our service.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">1. Services Offered</h3>
+    <p style="font-size: 1rem; margin: 0 0 0.5rem 0;">Scriptum Noble specializes in exquisite calligraphy services including, but not limited to:</p>
+    <ul style="font-size: 1rem; margin: 0 0 1.5rem 1.5rem; list-style: disc;">
+        <li style="margin-bottom: 0.5rem;">Bespoke Calligraphy</li>
+        <li style="margin-bottom: 0.5rem;">Custom Invitations</li>
+        <li style="margin-bottom: 0.5rem;">Hand-Lettered Art</li>
+        <li style="margin-bottom: 0.5rem;">Engraving Services</li>
+        <li style="margin-bottom: 0.5rem;">Calligraphy Workshops</li>
+    </ul>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">Our online platform serves to showcase our artistry, facilitate custom orders, and promote our workshops. All services are subject to availability and our acceptance.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">2. Custom Orders and Consultations</h3>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">For bespoke calligraphy, custom invitations, hand-lettered art, and engraving services, we require detailed communication regarding your specific needs and vision. All custom projects will be initiated upon receipt of a deposit and final approval of the design proof. Revisions are subject to our discretion and may incur additional charges.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">3. Calligraphy Workshops</h3>
+    <p style="font-size: 1rem; margin: 0 0 0.5rem 0;">Enrollment in our calligraphy workshops is subject to availability. Workshop fees are non-refundable unless otherwise specified at the time of booking or in the event of cancellation by Scriptum Noble. We reserve the right to cancel or reschedule workshops due to unforeseen circumstances, in which case participants will be offered a full refund or the option to transfer their enrollment to another session.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">4. Intellectual Property</h3>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">All original designs, artwork, content, and materials created by Scriptum Noble through its services, including bespoke calligraphy, custom invitations, and hand-lettered art, remain the intellectual property of Scriptum Noble. You may not reproduce, distribute, or create derivative works from our designs without our express written permission. You are granted a non-exclusive, non-transferable license to use the final commissioned artwork for its intended personal use.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">5. Payment and Pricing</h3>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">Prices for our services are listed on our site or provided through a custom quote. All payments are due as per the agreed-upon schedule for custom projects or at the time of booking for workshops. We accept various payment methods as indicated on our online platform. All prices are subject to change without prior notice, although confirmed orders will honor the price quoted at the time of confirmation.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">6. Shipping and Delivery</h3>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">For physical products, shipping costs and estimated delivery times will be communicated to you at the time of order confirmation. While we strive to meet all delivery deadlines, unforeseen delays may occur. Scriptum Noble is not responsible for delays caused by shipping carriers or events beyond our control.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">7. Limitation of Liability</h3>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">Scriptum Noble provides its services with reasonable care and skill. However, we do not guarantee that our service will be uninterrupted or error-free. To the fullest extent permitted by law, Scriptum Noble shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the service; (b) any conduct or content of any third party on the service; (c) any content obtained from the service; and (d) unauthorized access, use or alteration of your transmissions or content.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">8. Governing Law</h3>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">These Terms and Conditions shall be governed and construed in accordance with the laws of the State of New York, United States, without regard to its conflict of law provisions.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">9. Changes to Terms</h3>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our service after those revisions become effective, you agree to be bound by the revised terms.</p>
+
+    <h3 style="font-size: 1.75rem; font-weight: 600; margin: 0 0 1rem 0;">10. Contact Us</h3>
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">If you have any questions about these Terms and Conditions, please contact us:</p>
+    <ul style="font-size: 1rem; margin: 0 0 1.5rem 1.5rem; list-style: none;">
+        <li style="margin-bottom: 0.5rem;"><strong>By mail:</strong> 507 Linden Boulevard, New York, New York, 11203, USA</li>
+    </ul>
+
+    <p style="font-size: 1rem; margin: 0 0 1rem 0;">Thank you for choosing Scriptum Noble. We look forward to creating beautiful artistry for you.</p>
+</section>
+</main>
+<footer class="footer text-bg-dark py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center pt-4">
+      <p class="mb-2 mb-md-0 text-white">&copy; 2024 Scriptum Noble. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="./privacy.html" class="text-white text-decoration-none small">Privacy Policy</a>
+        <a href="./tos.html" class="text-white text-decoration-none small">Terms of Service</a>
+      </div>
+    </div>
+    <div id="cookieConsent" class="cookie-consent-banner w-100 py-3 text-center text-white bg-secondary fixed-bottom d-none">
+      <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+        <span>We use cookies to ensure you get the best experience on our website.</span>
+        <button id="acceptCookies" class="btn btn-primary btn-sm rounded-1 px-3">Accept</button>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cookieConsentBanner = document.getElementById('cookieConsent');
+      const acceptCookiesButton = document.getElementById('acceptCookies');
+      const cookieName = 'consent_Scriptum Noble_cookies_accepted';
+
+      // Check if the user has already accepted cookies
+      if (!localStorage.getItem(cookieName)) {
+        cookieConsentBanner.classList.remove('d-none');
+      }
+
+      // Handle "Accept" button click
+      acceptCookiesButton.addEventListener('click', function() {
+        localStorage.setItem(cookieName, 'true');
+        cookieConsentBanner.classList.add('d-none');
+      });
+
+      // Simple smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    });
+  </script>
+</body>
+</html>
